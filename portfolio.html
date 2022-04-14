@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Header Component -->
+    <link rel="stylesheet" href="./components/header.css">
+    <script defer src="./components/header.js"></script>
+
+     <!-- Footer -->
+     <link rel="stylesheet" href="./components/footer.css">
+     <script defer src="./components/footer.js"></script>
+     <!-- Portfolio js & css del servicios.-->
+     <link rel="stylesheet" href="./pages/serviciosyportfolio.css">
+    <script defer src="./pages/portfolio.js"></script>
+
+       <!-- Todos los fonts necesarios 
+            -> Orbitron: 500, medium.
+            -> Montserrat: 700, bold.
+            -> Poppins: 400, regular & 700 regular
+ -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Orbitron:wght@500&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+ 
+    <title>Portfolio</title>
+</head>
+<body>
+    <!-- Contenedor Bienvenida -->
+    <div class="contenedor__bienvenida">
+        <!-- Header Component -->
+        <header class="contenedor__insert-header"></header>
+        <h1 class="contenedor__bienvenida-title">Portfolio</h1>
+    </div>
+    <div class="contenedor__portfolio">
+        <div class="insert-project"></div>
+        <template class="template-item-results">
+            <div class="every-template-item">
+                <a class="template-url" href="" target="_blank">
+                    <img class="template-img" src="./images/model-service-portfolio.png">
+                </a>
+                    <h2 class="template-title">Desarrollo de Apps</h2>
+                    <p class="template-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quo neque a nesciunt error commodi odit molestias cupiditate dicta rem similique incidunt unde ut, ratione laudantium ipsa asperiores fuga hic.</p>
+            </div>
+        </template>
+    </div>
+      <!-- Footer Component -->
+      <div class="contenedor-insert-footer"></div>
+</body>
+</html>

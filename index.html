@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Header Component -->
+    <link rel="stylesheet" href="./components/header.css">
+    <script defer src="./components/header.js"></script>
+    
+    <!-- Form Component -->
+    <link rel="stylesheet" href="./components/form.css">
+    <script defer src="./components/form.js"></script>
+    
+    <!-- Footer -->
+    <link rel="stylesheet" href="./components/footer.css">
+    <script defer src="./components/footer.js"></script>
+    
+    <!-- Index js & css -->
+    <link rel="stylesheet" href="./pages/index.css">
+    <script defer src="./pages/index.js"></script>
+    <!-- Todos los fonts necesarios 
+            -> Orbitron: 500, medium.
+            -> Montserrat: 700, bold.
+            -> Poppins: 400, regular & 700 regular
+ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Orbitron:wght@500&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <title>Bienvenido</title>
+</head>
+<body>
+    <div class="contenedor__bienvenida">
+        <!-- Header Component -->
+    <header class="contenedor__insert-header"></header>
+
+    <div class="contenedor__bienvenida-presentacion">
+        <h1 class="contenedor__bienvenida-titulo">Hola</h1>
+        <h2 class="contenedor__bienvenida-subtitulo">Soy Axel</h2>
+    </div>
+    </div>
+    <!-- Servicios Container-->
+    <div class="services">
+        <!-- Quien Soy -->
+        <div class="services__quien-soy">
+            <img class="services__quien-soy-photo" src="./images/my-photo.png">
+            <div class="services__quien-soy-description">
+                <h2 class="services__quien-soy-description-title">Soy Axel</h2>
+                <p class="services__quien-soy-description-p">Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales vehicula velit. Aenean lobortis posuere tristique. Phasellus placerat arcu elementum nisi ultrices cursus. Etiam sit amet aliquet lacus. </p>
+            </div>
+        </div>
+        <!-- Servicios -->
+        <div class="services__my-services">
+            <h2 class="services__my-services-title">Mis servicios</h2>
+            
+                <div class="insert-service"></div>
+                <template class="template-item-results">
+                    <div class="services__service-container">
+                        <div class="every-template-item">
+                            <img class="services__service-photo" src="./images/model-service-portfolio.png">
+                            <h2 class="services__service-title">Desarrollo de Apps</h2>
+                            <p class="services__service-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quo neque a nesciunt error commodi odit molestias cupiditate dicta rem similique incidunt unde ut, ratione laudantium ipsa asperiores fuga hic.</p>
+                        </div>
+                    </div>
+                </template>
+        </div>
+    </div>
+    <!-- Form Component -->
+    <div class="contenedor__insert-form"></div>
+    <!-- Footer Component -->
+    <div class="contenedor-insert-footer"></div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+/* Para usar este componente de forma apropiada se debe linkear estas fuentes: Orbitron: 500, medium,Montserrat: 700, bold, Poppins: 400, regular & 700 regular */
+/* Acá tenes por las dudas: */
+/*<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Orbitron:wght@500&family=Poppins:wght@400;700&display=swap" rel="stylesheet"> */
+.my-form{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    background-color: #141414;
+    min-height: 70vh;
+}
+@media(min-width:767px){
+    .my-form{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .form__container-inputs{
+        width: 50%;
+    }
+    .form__container > .form__container-title{
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 48px;
+        letter-spacing: -1px;
+    }
+    .form__button{
+        transition: all 200ms ease-in-out;
+    }
+    .form__button:hover{
+       transform: scale(1.04);
+       font-weight: bold;
+       font-size: 20px;
+       box-shadow: 0 0 0 2px white;
+       letter-spacing: 1.1px;
+       background-color: white;
+       color: black;
+    }
+}
+.form__container-inputs{
+    display: flex;
+    flex-direction: column;
+}
+.form__inputs{
+    height: 45px;
+    border: none;
+    border-radius: 2px;
+    padding-left: 20px;
+}
+
+.form__inputs::placeholder{
+    padding-left: 20px;
+}
+.form__input-textarea{
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.form__input-textarea::placeholder{
+    padding-left: 20px;
+    
+}
+.form__container-title{
+    text-align: center;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -2px;
+    margin-bottom: 0;
+}
+.form__labels, .form__button{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+}
+.form__labels{
+    margin-top: 20px;
+}
+.form__button{
+    margin-top: 60px;
+    height: 55px;
+    background-color: #2C2C2C;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.form__button:active{
+    border-style: inset;
+}

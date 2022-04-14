@@ -1,0 +1,111 @@
+/* Para usar este componente de forma apropiada se debe linkear estas fuentes: Orbitron: 500, medium,Montserrat: 700, bold, Poppins: 400, regular & 700 regular */
+/* Acá tenes por las dudas: */
+/*<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Orbitron:wght@500&family=Poppins:wght@400;700&display=swap" rel="stylesheet"> */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto 50px auto 50px;
+    background: none;
+    min-height: 20vh;
+    z-index: 10;
+}
+
+.header__title{
+    font-family: "Orbitron", sans-serif;
+    color: white;
+    font-size: 3rem;
+    text-decoration: none;
+}
+a:-webkit-any-link{
+    color: white;
+    text-decoration: none;
+}
+
+.header__nav{
+    display: none;
+    justify-content: space-between;
+    width: 250px;
+}
+/* Para la versión en PC*/
+@media(min-width: 767px){
+    .header > .header__menu{
+        display: none;
+        width: 0;
+        height: 0; 
+    }
+    .header__menu-raya{
+        display: none;
+    }
+    .header__nav{
+        display: flex;
+    }
+}
+@media(min-width: 1023px){
+    .header__nav{
+        width: 350px;
+    }
+}
+/* Pequeño ajuste para las versiones móbiles con menor resolución */
+@media(max-width:426px){
+    .header{
+        margin: auto 10px auto 10px;;
+    }
+}
+.header__nav-links, .header__window-links{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+}
+.header__menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50px;
+    height: 40px;
+    cursor: pointer;
+}
+.header__menu-raya{
+    width: 100%;
+    height: 15%;
+    background-color: white;
+}
+/* Menú hamburguesa*/
+.header__window{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #161616;
+    position: absolute;
+    z-index: 15;
+    width: 100%;
+    top: 0;
+    right: 0;
+}
+.header__window-button{
+    font-family: "Montserrat", sans-serif;
+    background-color: #161616;
+    color: white;
+    font-size: 2.5rem;
+     border: none;
+     width: 50px;
+     height: 60px;
+     cursor: pointer;
+     position:absolute;
+     align-self: flex-end;
+     top: 17px;
+     right: 20px;
+     padding: 0;
+     
+}
+.header__window-links{
+    font-size: 4em;
+    margin-bottom: 20px;
+    position: relative;
+}

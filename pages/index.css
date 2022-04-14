@@ -1,0 +1,176 @@
+body{
+    margin: 0;
+}
+.contenedor__bienvenida{
+    min-height: 100vh;
+    
+    align-items: center;
+    background-image: url("../images/background-index-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media(min-width: 767px){    
+.contenedor__bienvenida{
+    background-image: url("../images/background-index.png");
+}
+.contenedor__bienvenida >.contenedor__bienvenida-presentacion{
+    margin-top: 10%;
+}
+.services__quien-soy > .services__quien-soy-photo{
+    display: flex;
+    max-height: 500px;
+}
+.services__quien-soy{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    box-sizing: content-box;
+    padding: 50px 150px 0 150px;
+    
+}
+.services__quien-soy > .services__quien-soy-description{
+    background-color: white;
+    min-height: 450px;
+    max-height: 500px;
+    padding: 50px;
+    min-width: 250px;
+    max-width: 300px;
+}
+.services__quien-soy-description>.services__quien-soy-description-title {
+    color: black;
+    text-align: left;
+}
+.services__quien-soy-description>.services__quien-soy-description-p{
+    color: black;
+    text-align: left;
+}
+.services__my-services > .insert-service{
+    flex-direction: row;
+    width: 100%;
+}
+
+.services__service-description{
+    max-width: 400px;
+}
+}
+/* ACA TERMINA EL @MEDIA */
+.contenedor__bienvenida-titulo{
+    color: white;
+    margin-bottom: 0px;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -1px;
+    text-align: center;
+    width: 100px;
+    height: 50px;
+
+}
+.contenedor__bienvenida-subtitulo{
+    margin-top: 10px;
+    color: white;
+    font-size: 32px;
+    font-weight: 700, bold;
+    line-height: 39px;
+    letter-spacing: 2px;
+    text-align: center;
+
+}
+.contenedor__bienvenida-presentacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15%;
+}
+.contenedor__bienvenida-titulo, .contenedor__bienvenida-subtitulo{
+    font-family: "Montserrat", sans-serif;
+}
+/* Quien soy */
+.services__quien-soy{
+    display: flex;
+    justify-content: space-around;
+}
+.services__quien-soy-description{
+    background-color: #141414;
+    min-height: 50vh;
+    padding: 15%;
+}
+.services__quien-soy-photo{
+    display: none;
+}
+.services__quien-soy-description-title{
+    margin-top: 0;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: -2px;
+    text-align: center;
+
+}
+.services__quien-soy-description-p{
+    color: white;
+font-family: "Poppins", sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+max-height: 70vh;
+}
+/* Servicios */
+.services__my-services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.services__my-services-title{
+    font-family: "Montserrat", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: -2px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.services__service{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.services__service-title{  
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.services__service-description{   
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.services__service-photo{
+    width: 300px;
+    height: 150px;
+}
+.insert-service{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.every-template-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}

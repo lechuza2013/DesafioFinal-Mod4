@@ -1,0 +1,96 @@
+body{
+    background-color: black;
+}
+.contenedor__bienvenida{
+    background-color: black;
+    min-height: 60vh;
+    margin-bottom: 100px;
+}
+@keyframes AnimationBG{
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+.contenedor__bienvenida-title{    
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -1px;
+    text-align: center;
+    margin-bottom: 0;
+    padding: 50px;
+}
+@media(min-width:765px){
+    .contenedor__bienvenida-title{
+        text-align: left;
+    }
+    .contenedor__bienvenida{
+        background-image: linear-gradient(-45deg,
+         #958C40 29.35%, 
+         rgba(156, 0, 210, 0.8) 78.73%);
+        background-size: 300% 100%;
+        animation: AnimationBG 5s ease infinite;
+    }
+    .contenedor__services >.insert-service{
+        justify-content: space-around;
+        flex-direction: row;
+    }
+    .every-template-item{
+       max-width: 500px;
+       flex-direction: row;
+       display: flex;
+       justify-content: space-around;
+    }
+    .insert-project{
+        flex-direction: row;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+}
+.contenedor-portfolio{
+    min-height: 70vh;
+}
+.contenedor__services{
+    background-color: black;
+    
+}
+.insert-service{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 70vh;
+}
+.every-template-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   margin-bottom: 100px;
+}
+.template-img{
+    max-width: 300px;
+    max-height: 170px;
+}
+.template-title{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+.template-description{
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    max-width: 500px;
+}

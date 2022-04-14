@@ -1,0 +1,28 @@
+
+.contenedor__bienvenida{
+    background-color: black;
+    min-height: 80vh;
+    
+}
+.my-form{
+    background-color: transparent;
+}
+@media(min-width:768px){
+    /* @keyframes AnimationBG{
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%;}
+        100%{background-position:0% 50%;}
+    } */
+    .contenedor__bienvenida{
+        background-image: linear-gradient(-45deg,
+        #408195 29.35%,
+         rgba(0, 210, 135, 0.8) 78.73%);
+        
+        /* animation: AnimationBG 5s ease infinite;  */
+    }
+    .my-form{
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+    
+}

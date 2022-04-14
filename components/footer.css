@@ -1,0 +1,61 @@
+/* Para usar este componente de forma apropiada se debe linkear estas fuentes: Orbitron: 500, medium,Montserrat: 700, bold, Poppins: 400, regular & 700 regular */
+/* Acá tenes por las dudas: */
+/*<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Orbitron:wght@500&family=Poppins:wght@400;700&display=swap" rel="stylesheet"> */
+body{
+    margin: 0;
+}
+.footer{
+    min-height: 60vh;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #2C2C2C;
+}
+@media(min-width:767px){
+    .footer{
+        justify-content: space-around;
+        flex-direction: row;
+    }
+}
+.footer__container-title{
+    font-family: "Orbitron",sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 48px;
+    letter-spacing: -1px;
+    text-align: center;
+    color: white;
+}
+.footer__icon{
+    width: 30px;
+    height: 30px;
+    vertical-align:middle;
+}
+.footer__labels{
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.footer__container-social-media{
+    width: 130px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: right;
+    
+}
+.footer__container-two{
+    display:flex;
+    justify-content: flex-end;
+    align-items: right;
+    flex-direction: column;
+}
