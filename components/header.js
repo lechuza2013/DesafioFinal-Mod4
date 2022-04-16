@@ -2,7 +2,7 @@ function createHeaderComponent(el){
     const componentEl = document.createElement("div");
         componentEl.innerHTML = `
         <header class="header">
-        <a href="../index.html">
+        <a href="./index.html">
         <h2 class="header__title">AXEL</h2>
         <a>
         <nav class="header__nav">
