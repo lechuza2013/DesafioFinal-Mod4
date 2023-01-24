@@ -13,7 +13,7 @@ componentElForm.innerHTML = `
                 <input class="form__inputs" type="email" placeholder="example: axel@gmail.com..." name="email">   
 
                 <label class="form__labels" for="message" class="form__labels">Mensaje</label>
-                <textarea class="form__input-textarea" name="message" id="" cols="30" rows="10" placeholder="example: te quiero mucho..."></textarea>
+                <textarea class="form__input-textarea" name="message" id="" cols="30" rows="10" placeholder="example: Hola buenas tardes..."></textarea>
 
                 <button class="form__button">Enviar</button>
             </div>
